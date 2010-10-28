@@ -18,6 +18,12 @@
         %td.right= e.votes
         %td.right= e.status
         %td.right= e.complete
+  %tfoot
+    %tr
+      %td{:colspan => 6, :class => "right"}= will_paginate @entries
+      
+%br
+%br
        
 
 

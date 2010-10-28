@@ -7,7 +7,7 @@
 
 class LeaderboardController < ApplicationController
   def index
-    @entries = Leaderboard.find(:all, :order => "votes desc")
+    @entries = Leaderboard.paginate(:page => params[:page,], :order => "votes desc")
   end
 
   def import

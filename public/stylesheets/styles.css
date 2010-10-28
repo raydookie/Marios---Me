@@ -48,3 +48,31 @@ table thead{
   text-align: left;
   border-collapse:collapse;
 }
+/******* Pagination ************/
+
+.pagination {
+  float: right;
+  font-size: 11px;
+  margin: 16px 0px 0px 0px; }
+  .pagination a, .pagination span {
+    padding: .2em .5em;
+    display: block;
+    float: left;
+    margin: 0px 2px 0px 0px; }
+  .pagination span.disabled {
+    color: #999;
+    }
+  .pagination span.current {
+    font-weight: bold;
+    background: #307AD5;
+    color: white;
+    }
+  .pagination a {
+    text-decoration: none;
+    color: #307AD5;
+    }
+    .pagination a:hover, .pagination a:focus {
+      color: #fff;
+      background: #307AD5;
+      border-color: navy; }
+/********* End Pagination **********/
