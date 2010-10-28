@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.root :controller => "leaderboard"
+  map.import 'import', :controller => "leaderboard", :action => "import"
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

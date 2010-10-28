@@ -1,0 +1,24 @@
+%h1 Mario's & Me - Leaderboard
+
+%table.styled_table
+  %thead
+    %tr
+      %td First Name
+      %td Last Name
+      %td Title
+      %td.right Total Votes
+      %td.right Status
+      %td.right Complete?
+  %tbody
+    - @entries.each do |e|
+      %tr{:class => "#{cycle("even", "odd")}"}
+        %td= e.first_name
+        %td= e.last_name
+        %td= e.title
+        %td.right= e.votes
+        %td.right= e.status
+        %td.right= e.complete
+       
+
+
+    
